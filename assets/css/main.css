@@ -2788,3 +2788,9 @@ section,
   .featured-stay .featured-photo,
   .featured-stay .featured-photo img { min-height: 260px; }
 }
+
+@media (max-width: 991px) {
+  #hero .airbnb-badges {
+    display: none;
+  }
+}
