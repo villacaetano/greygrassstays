@@ -3017,3 +3017,25 @@ section,
     height: auto;
   }
 }
+
+.hero-actions,
+.cta-section,
+.calendar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-text { text-align: center; }
+  #hero .hero-actions,
+  #hero .social-links,
+  #hero .airbnb-badges,
+  .cta-section,
+  .calendar-actions,
+  .featured-stay .hero-actions,
+  .featured-stay .chip-row,
+  .featured-stay .airbnb-badges {
+    justify-content: center;
+  }
+}
