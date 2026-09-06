@@ -2553,147 +2553,17 @@ section,
 /*--------------------------------------------------------------
 # GreyGrass Stays additions
 --------------------------------------------------------------*/
-.header .brand-lockup {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 10px 20px;
+
+.hero .hero-text .brand-title {
+  font-size: clamp(2.8rem, 7vw, 4.6rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-bottom: 0.35rem;
 }
+.tone-grey { color: #9aa0a6; }
+.tone-grass { color: #7d8f68; }
+.tone-stays { color: #ececec; }
 
-.header .brand-lockup img {
-  width: 84px;
-  height: 84px;
-  object-fit: contain;
-}
-
-.header .brand-lockup span {
-  font-family: var(--nav-font);
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-}
-
-.hero .hero-visual .profile-container .profile-image.logo-hero {
-  object-fit: contain;
-  background: #141414;
-  padding: 48px;
-}
-
-.about .profile-header .profile-image.logo-about img {
-  object-fit: contain;
-  background: #141414;
-  padding: 18px;
-}
-
-.featured-stay {
-  background-color: var(--surface-color);
-  border-radius: 1.25rem;
-  overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
-}
-
-.featured-stay .featured-photo {
-  display: block;
-  height: 100%;
-  min-height: 420px;
-}
-
-.featured-stay .featured-photo img {
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  object-fit: cover;
-}
-
-.featured-stay .featured-copy {
-  padding: 2.25rem;
-}
-
-.featured-stay .chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 1.25rem 0 1.5rem;
-}
-
-.featured-stay .chip {
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
-  color: var(--accent-color);
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-}
-
-.featured-stay .mini-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 1.5rem;
-}
-
-.featured-stay .mini-gallery img {
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.calendar .calendar-box,
-.calendar .map-frame {
-  background-color: var(--surface-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  height: 100%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.calendar .ics-field {
-  width: 100%;
-  background: color-mix(in srgb, var(--surface-color) 90%, white 4%);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
-  color: var(--default-color);
-  border-radius: 0.5rem;
-  padding: 0.85rem 1rem;
-  font-size: 13px;
-}
-
-.calendar .calendar-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 1rem 0;
-}
-
-.calendar iframe,
-.contact iframe.map {
-  width: 100%;
-  height: 340px;
-  border: 0;
-  border-radius: 12px;
-  filter: grayscale(1) contrast(1.05);
-}
-
-.portfolio .portfolio-wrap img.contain-logo {
-  object-fit: contain;
-  background: #141414;
-  padding: 40px;
-}
-
-@media (max-width: 991px) {
-  .featured-stay .featured-photo,
-  .featured-stay .featured-photo img {
-    min-height: 260px;
-  }
-}
-
-/*--------------------------------------------------------------
-# GreyGrass Stays additions — paste at the END of assets/css/main.css
---------------------------------------------------------------*/
-
-/* Logo without the SnapFolio photo frame */
 .hero .hero-visual .logo-plain,
 .about .logo-plain {
   display: flex;
@@ -2701,27 +2571,22 @@ section,
   justify-content: center;
   background: transparent;
 }
-
 .hero .hero-visual .logo-plain img {
-  width: min(360px, 100%);
+  width: min(560px, 100%);
   height: auto;
   object-fit: contain;
   background: transparent;
   border: 0;
-  border-radius: 0;
   box-shadow: none;
 }
-
 .about .profile-header .logo-plain.about-logo {
   width: 160px;
   height: auto;
   margin: 0 auto 1.5rem;
   border: 0;
-  border-radius: 0;
   overflow: visible;
   box-shadow: none;
 }
-
 .about .profile-header .logo-plain.about-logo img {
   width: 100%;
   object-fit: contain;
@@ -2729,17 +2594,9 @@ section,
   padding: 0;
 }
 
-.portfolio .portfolio-wrap img.contain-logo {
-  object-fit: contain;
-  background: transparent;
-  padding: 40px;
-}
-
-/* Hide template scroll-top; WhatsApp float takes its place */
 .scroll-top {
   display: none !important;
   visibility: hidden !important;
-  opacity: 0 !important;
   pointer-events: none !important;
 }
 
@@ -2760,44 +2617,22 @@ section,
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
   animation: wa-pulse 2s ease-in-out infinite;
 }
-
-.whatsapp-float:hover {
-  color: #fff;
-  background: #1ebe5d;
-  transform: translateY(-2px);
-}
-
+.whatsapp-float:hover { color: #fff; background: #1ebe5d; }
 @keyframes wa-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
   70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
 }
 
-/* Socials */
-.social-links a.airbnb {
-  color: #ff5a5f;
-}
-
+.social-links a.airbnb { color: #ff5a5f; }
 .header .social-links a.airbnb:hover,
-.hero .social-links a.airbnb:hover {
-  background: #ff5a5f;
-  color: #fff;
-}
-
-.social-links a.whatsapp {
-  color: #25d366;
-}
-
+.hero .social-links a.airbnb:hover { background: #ff5a5f; color: #fff; }
+.social-links a.whatsapp { color: #25d366; }
 .header .social-links a.whatsapp:hover,
-.hero .social-links a.whatsapp:hover {
-  background: #25d366;
-  color: #fff;
-}
+.hero .social-links a.whatsapp:hover { background: #25d366; color: #fff; }
 
-.social-links a svg {
-  display: block;
-}
+.airbnb-mark { width: 18px; height: 18px; display: block; object-fit: contain; }
+.airbnb-mark.inline { display: inline-block; width: 16px; height: 16px; margin-right: 6px; vertical-align: -2px; }
 
-/* Yellow animated stars */
 .star-rating {
   display: inline-flex;
   align-items: center;
@@ -2805,96 +2640,55 @@ section,
   color: #ffd400;
   margin: 0 0 0.75rem;
 }
-
-.star-rating span {
-  margin-left: 8px;
-  color: var(--heading-color);
-  font-weight: 700;
-}
-
-.star-rating i {
-  display: inline-block;
-  animation: star-twinkle 1.6s ease-in-out infinite;
-}
-
+.star-rating span { margin-left: 8px; color: var(--heading-color); font-weight: 700; }
+.star-rating i { display: inline-block; animation: star-twinkle 1.6s ease-in-out infinite; }
 .star-rating i:nth-child(2) { animation-delay: 0.12s; }
 .star-rating i:nth-child(3) { animation-delay: 0.24s; }
 .star-rating i:nth-child(4) { animation-delay: 0.36s; }
 .star-rating i:nth-child(5) { animation-delay: 0.48s; }
-
 @keyframes star-twinkle {
   0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.85; }
   50% { transform: scale(1.18) rotate(-8deg); opacity: 1; }
 }
+.stats .stats-item .icon-wrapper.star-icon i { color: #ffd400; }
 
-.stats .stats-item .icon-wrapper.star-icon i {
-  color: #ffd400;
-}
-
-.featured-stay .chip.star-chip {
+.airbnb-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 0.75rem 0 1rem; }
+.ab-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 7px 12px;
 }
+.ab-badge.guest-fav { color: #222; background: #fff; border: 1px solid #222; }
+.ab-badge.guest-fav::before,
+.ab-badge.guest-fav::after { content: "\273F"; font-size: 11px; color: #222; margin: 0 4px; }
+.ab-badge.superhost { color: #fff; background: #ff5a5f; }
+.guest-fav-note { font-size: 14px; opacity: 0.8; margin-bottom: 1rem; }
+.section-title .airbnb-badges { justify-content: center; }
 
-.featured-stay .chip.star-chip .star-rating {
-  margin: 0;
-}
-
-/* Featured stay + calendar + map */
 .featured-stay {
   background-color: var(--surface-color);
   border-radius: 1.25rem;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
 }
-
-.featured-stay .featured-photo {
-  display: block;
-  height: 100%;
-  min-height: 420px;
-}
-
-.featured-stay .featured-photo img {
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  object-fit: cover;
-}
-
-.featured-stay .featured-copy {
-  padding: 2.25rem;
-}
-
-.featured-stay .chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 1.25rem 0 1.5rem;
-}
-
+.featured-stay .featured-photo { display: block; height: 100%; min-height: 420px; }
+.featured-stay .featured-photo img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; }
+.featured-stay .featured-copy { padding: 2.25rem; }
+.featured-stay .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 1.25rem 0 1.5rem; }
 .featured-stay .chip {
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
   color: var(--accent-color);
   border-radius: 999px;
   padding: 6px 12px;
   font-size: 12px;
-  letter-spacing: 0.04em;
 }
-
-.featured-stay .mini-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 1.5rem;
-}
-
-.featured-stay .mini-gallery img {
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+.featured-stay .chip.star-chip { display: inline-flex; align-items: center; gap: 8px; }
+.featured-stay .chip.star-chip .star-rating { margin: 0; }
+.featured-stay .mini-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 1.5rem; }
+.featured-stay .mini-gallery img { width: 100%; height: 110px; object-fit: cover; border-radius: 10px; }
 
 .calendar .calendar-box,
 .contact .calendar-box {
@@ -2904,7 +2698,6 @@ section,
   height: 100%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
-
 .calendar .ics-field {
   width: 100%;
   background: color-mix(in srgb, var(--surface-color) 90%, white 4%);
@@ -2914,14 +2707,7 @@ section,
   padding: 0.85rem 1rem;
   font-size: 13px;
 }
-
-.calendar .calendar-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 1rem 0;
-}
-
+.calendar .calendar-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 1rem 0; }
 .calendar iframe,
 .contact iframe.map {
   width: 100%;
@@ -2931,40 +2717,6 @@ section,
   filter: none;
 }
 
-@media (max-width: 991px) {
-  .featured-stay .featured-photo,
-  .featured-stay .featured-photo img {
-    min-height: 260px;
-  }
-}
-.airbnb-mark {
-  width: 18px;
-  height: 18px;
-  display: block;
-  object-fit: contain;
-}
-.airbnb-mark.inline {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
-  vertical-align: -2px;
-}
-
-.hero .hero-text .brand-title {
-  font-size: clamp(2.8rem, 7vw, 4.6rem);
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  margin-bottom: 0.35rem;
-}
-.tone-grey { color: #9aa0a6; }   /* Grey */
-.tone-grass { color: #7d8f68; }  /* Grass */
-.tone-stays { color: #ececec; }  /* Stays */
-
-.hero .hero-visual .logo-plain img {
-  width: min(560px, 100%);
-}
-
 .portfolio .owner-card {
   background: #161616;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
@@ -2972,7 +2724,6 @@ section,
 }
 .portfolio .owner-card .owner-panel {
   min-height: 280px;
-  height: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -2981,9 +2732,7 @@ section,
 }
 .portfolio .owner-card .category,
 .portfolio .owner-card h4,
-.portfolio .owner-card p {
-  color: #ececec !important;
-}
+.portfolio .owner-card p { color: #ececec !important; }
 .portfolio .owner-card .category {
   font-size: 12px;
   letter-spacing: 0.16em;
@@ -2991,32 +2740,7 @@ section,
   color: #9aa0a6 !important;
   margin-bottom: 0.75rem;
 }
-.portfolio .owner-card p {
-  opacity: 0.8;
-  margin: 0.75rem 0 1.25rem;
-}
-
-
-.mobile-hero-logo {
-  display: none;
-}
-
-@media (max-width: 991px) {
-  #hero .hero-visual-col,
-  #hero .hero-visual,
-  #hero .profile-container {
-    display: none !important;
-  }
-  .mobile-hero-logo {
-    display: block;
-    text-align: center;
-    margin: 0 auto 1rem;
-  }
-  .mobile-hero-logo img {
-    width: 88px;
-    height: auto;
-  }
-}
+.portfolio .owner-card p { opacity: 0.8; margin: 0.75rem 0 1.25rem; }
 
 .hero-actions,
 .cta-section,
@@ -3026,7 +2750,32 @@ section,
   gap: 10px;
 }
 
+.mobile-hero-logo,
+.mobile-top-logo { display: none; }
+
+#hero.hero { position: relative; }
+
+@media (max-width: 1199px) {
+  .mobile-top-logo {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 5;
+  }
+  .mobile-top-logo img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+  }
+}
+
 @media (max-width: 991px) {
+  #hero .hero-visual-col,
+  #hero .hero-visual,
+  #hero .profile-container { display: none !important; }
+  .mobile-hero-logo { display: block; text-align: center; margin: 0 auto 1rem; }
+  .mobile-hero-logo img { width: 88px; height: auto; }
   #hero .hero-text { text-align: center; }
   #hero .hero-actions,
   #hero .social-links,
@@ -3035,27 +2784,7 @@ section,
   .calendar-actions,
   .featured-stay .hero-actions,
   .featured-stay .chip-row,
-  .featured-stay .airbnb-badges {
-    justify-content: center;
-  }
-}
-
-
-.mobile-top-logo {
-  display: none;
-}
-
-@media (max-width: 1199px) {
-  .mobile-top-logo {
-    display: block;
-    position: fixed;
-    top: 14px;
-    left: 16px;
-    z-index: 9998;
-  }
-  .mobile-top-logo img {
-    width: 74px;
-    height: 74px;
-    object-fit: contain;
-  }
+  .featured-stay .airbnb-badges { justify-content: center; }
+  .featured-stay .featured-photo,
+  .featured-stay .featured-photo img { min-height: 260px; }
 }
