@@ -2797,3 +2797,15 @@ section,
 @media (max-width: 991px) {
   #hero .airbnb-badges { display: none; }
 }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-actions {
+    justify-content: center;
+  }
+}
