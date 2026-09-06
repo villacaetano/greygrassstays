@@ -2797,6 +2797,13 @@ section,
 @media (max-width: 991px) {
   #hero .airbnb-badges { display: none; }
 }
+#hero .hero-status {
+  margin: 0 0 1rem;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9aa0a6;
+}
 
 .hero-actions {
   display: flex;
