@@ -2789,4 +2789,11 @@ section,
   .featured-stay .featured-photo img { min-height: 260px; }
 }
 
-
+.hero-badges .svg-badge {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 991px) {
+  #hero .airbnb-badges { display: none; }
+}
