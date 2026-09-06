@@ -2995,3 +2995,25 @@ section,
   opacity: 0.8;
   margin: 0.75rem 0 1.25rem;
 }
+
+
+.mobile-hero-logo {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-visual-col,
+  #hero .hero-visual,
+  #hero .profile-container {
+    display: none !important;
+  }
+  .mobile-hero-logo {
+    display: block;
+    text-align: center;
+    margin: 0 auto 1rem;
+  }
+  .mobile-hero-logo img {
+    width: 88px;
+    height: auto;
+  }
+}
