@@ -3039,3 +3039,23 @@ section,
     justify-content: center;
   }
 }
+
+
+.mobile-top-logo {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .mobile-top-logo {
+    display: block;
+    position: fixed;
+    top: 14px;
+    left: 16px;
+    z-index: 9998;
+  }
+  .mobile-top-logo img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+}
